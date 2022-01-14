@@ -1,1 +1,48 @@
 @import '../../style/variables.scss';
+
+.profile {
+  width: 560px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  .profileInfo {
+    margin-bottom: 55px;
+
+    h1 {
+      font-weight: 800;
+      font-size: 48px;
+      color: $textBlue;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  .blogs {
+    .buttons {
+      margin-bottom: 45px;
+
+      .button {
+        margin-right: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: &textDark;
+        background-color: transparent;
+        border: none;
+        padding: 10px 28px;
+        cursor: pointer;
+      }
+      .active {
+        color: #36b55a;
+        background: rgba(64, 210, 105, 0.08);
+        border-radius: 4px;
+        font-weight: 500;
+      }
+    }
+  }
+}

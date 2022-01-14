@@ -1,0 +1,58 @@
+@import '../../style/variables.scss';
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .searchPanel {
+    width: 330px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 15px;
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 14px;
+      cursor: pointer;
+    }
+
+    .close:hover + input {
+      width: 330px;
+      background: #ededed61;
+    }
+
+    input {
+      width: 20px;
+      height: 50px;
+      background: transparent;
+      border: none;
+      font-size: 10pt;
+      float: right;
+      color: $textDark;
+      padding-left: 25px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transition: width 0.55s ease;
+      -moz-transition: width 0.55s ease;
+      -ms-transition: width 0.55s ease;
+      -o-transition: width 0.55s ease;
+      transition: width 0.55s ease;
+
+      &:hover,
+      &:focus {
+        width: 330px;
+        background: #ededed61;
+      }
+    }
+  }
+
+  .account {
+    margin-left: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+}

@@ -1,1 +1,54 @@
 @import '../../style/variables.scss';
+
+.menubar {
+  img {
+    cursor: pointer;
+  }
+}
+
+.menu {
+  margin-top: 26px;
+
+  .close {
+    text-align: right;
+    margin-right: 15px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .menuInfo {
+    margin: 40px 0px 40px 40px;
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      color: #5c5c5c;
+    }
+  }
+
+  ul {
+    li {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 52px;
+      padding-left: 40px;
+      color: $textDark;
+      cursor: pointer;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+
+      &:hover {
+        background-color: $textDark;
+        color: $textLight;
+      }
+    }
+  }
+}
